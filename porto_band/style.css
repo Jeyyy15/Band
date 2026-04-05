@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: rgb(69, 66, 66);
+  color: rgb(255, 255, 255);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  top: 40%;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* VIDEO */
+iframe {
+  width: 80%;
+  height: 400px;
+}
+
+/* GALLERY */
+.grid {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.grid img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+a {
+  color: red;
+}
+
+.experience {
+  background: #0a0a0a;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.exp-item {
+  padding: 20px;
+  border-left: 3px solid red;
+  background: #111;
+  transition: 0.3s;
+}
+
+.exp-item:hover {
+  transform: translateX(10px);
+  background: #1a1a1a;
+}
+
+.exp-item h3 {
+  margin-bottom: 5px;
+}
+
+.exp-item span {
+  font-size: 12px;
+  color: gray;
+}
+
+.exp-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.exp-item {
+  position: relative;
+}
+
+.exp-item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+}
